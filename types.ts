@@ -22,10 +22,13 @@ export interface ChatMessage {
 export interface Appointment {
   id: string;
   customerName: string;
+  phone: string;
   carModel: string;
   serviceType: string;
   date: string;
-  status: 'pending' | 'confirmed' | 'completed';
+  time: string;
+  status: 'Pendente' | 'Confirmado' | 'Concluído';
+  createdAt: number;
 }
 
 export enum AppView {
